@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>凯哥社媒工作室每日全球爆款</title>
+<style>
+:root{
+  --navy:#081F5C;
+  --navy-deep:#05163F;
+  --navy-soft:#12296B;
+  --gold:#C9A961;
+  --gold-bright:#E3C87F;
+  --gold-pale:#F3EAD3;
+  --bg:#F5F5F5;
+  --card:#FFFFFF;
+  --ink:#1C2333;
+  --ink-2:#4A5265;
+  --ink-3:#7A8194;
+  --line:#E4E2DA;
+  --green:#1F7A4D;
+  --green-bg:#E7F3EC;
+  --amber:#9A6B12;
+  --amber-bg:#FBF3DE;
+  --red:#A83A32;
+  --red-bg:#F9ECEA;
+  color-scheme: light;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  -webkit-font-smoothing:antialiased;
+}
+
+/* ---------- Header ---------- */
+header{
+  background:linear-gradient(160deg,var(--navy) 0%,var(--navy-deep) 100%);
+  color:#fff;
+  padding:44px 24px 0;
+}
+.header-inner{max-width:1440px;margin:0 auto}
+.studio-line{
+  font-size:13px;letter-spacing:.42em;color:var(--gold-bright);
+  margin-bottom:14px;font-weight:500;
+}
+h1{
+  font-family:"Noto Serif SC","Songti SC",serif;
+  font-size:clamp(30px,4.2vw,52px);
+  font-weight:900;letter-spacing:.06em;line-height:1.2;
+}
+h1 .gold{color:var(--gold-bright)}
+.date-line{
+  margin-top:14px;display:flex;flex-wrap:wrap;gap:10px 22px;align-items:center;
+  font-size:14px;color:#C7CEE4;
+}
+.date-line .d{
+  font-family:"Noto Serif SC",serif;font-size:19px;color:#fff;letter-spacing:.08em;
+}
+.gold-rule{height:1px;background:linear-gradient(90deg,var(--gold),rgba(201,169,97,0));margin:26px 0 0}
+.overview{
+  display:grid;grid-template-columns:repeat(5,1fr);
+}
+.ov{
+  padding:20px 18px 24px;text-align:center;
+  border-right:1px solid rgba(255,255,255,.08);
+}
+.ov:last-child{border-right:none}
+.ov .num{
+  font-family:"Noto Serif SC",serif;font-size:34px;font-weight:700;color:#fff;line-height:1;
+}
+.ov .num em{font-style:normal;color:var(--gold-bright)}
+.ov .lab{margin-top:8px;font-size:12.5px;letter-spacing:.18em;color:#A9B3D2}
+
+/* ---------- Toolbar ---------- */
+.toolbar{
+  position:sticky;top:0;z-index:20;
+  background:rgba(245,245,245,.96);backdrop-filter:blur(6px);
+  border-bottom:1px solid var(--line);
+}
+.toolbar-inner{
+  max-width:1440px;margin:0 auto;padding:14px 24px;
+  display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;
+}
+.filters{display:flex;flex-wrap:wrap;gap:8px}
+.fbtn{
+  font-family:inherit;font-size:13.5px;font-weight:500;
+  padding:9px 16px;min-height:38px;border-radius:999px;cursor:pointer;
+  background:#fff;border:1px solid #D8D5CB;color:var(--ink-2);
+  transition:all .15s ease;
+}
+.fbtn:hover{border-color:var(--gold);color:var(--navy)}
+.fbtn.active{background:var(--navy);border-color:var(--navy);color:#fff}
+.fbtn.active .cnt{color:var(--gold-bright)}
+.fbtn .cnt{font-family:"Noto Serif SC",serif;font-weight:700;margin-left:4px;color:var(--gold)}
+.toolbar-right{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.showing{font-size:13px;color:var(--ink-3);white-space:nowrap}
+.showing b{font-family:"Noto Serif SC",serif;color:var(--navy);font-size:16px}
+.dl-btn{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--navy);color:#fff;text-decoration:none;
+  font-size:14px;font-weight:700;letter-spacing:.04em;
+  padding:11px 20px;min-height:44px;border-radius:6px;
+  border:1px solid var(--gold);
+  transition:background .15s ease;
+}
+.dl-btn:hover{background:var(--navy-soft)}
+.dl-btn svg{flex:none}
+
+/* ---------- Table ---------- */
+main{max-width:1440px;margin:0 auto;padding:22px 24px 56px}
+.colhead,.row{
+  display:grid;
+  grid-template-columns:118px 1.35fr .95fr 2fr .85fr 1.7fr 128px;
+  gap:0 18px;align-items:start;
+}
+.colhead{
+  padding:10px 20px 12px;
+  font-size:12px;letter-spacing:.22em;color:var(--ink-3);font-weight:700;
+  border-bottom:2px solid var(--navy);
+}
+.row{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-top:none;
+  padding:18px 20px;
+  transition:background .15s ease;
+}
+.row:hover{background:#FDFCF8}
+.row.hidden{display:none}
+.thumb{
+  width:118px;height:118px;object-fit:cover;border-radius:6px;
+  border:1px solid var(--line);display:block;background:#EEE;
+}
+.pname{
+  font-family:"Noto Serif SC",serif;font-weight:700;font-size:16.5px;
+  line-height:1.45;color:var(--navy);
+}
+.pno{
+  display:inline-block;font-family:"Noto Serif SC",serif;font-size:12px;
+  color:#8A6D2F;border:1px solid var(--gold);border-radius:3px;
+  padding:0 6px;margin-bottom:7px;letter-spacing:.1em;
+}
+.plat{
+  display:inline-block;margin-top:9px;font-size:12px;font-weight:700;letter-spacing:.06em;
+  color:var(--navy);background:var(--gold-pale);border-radius:3px;padding:3px 9px;
+}
+.price{
+  font-family:"Noto Serif SC",serif;font-size:15.5px;font-weight:700;color:var(--ink);
+  line-height:1.55;
+}
+.price .note{display:block;font-family:"Noto Sans SC",sans-serif;font-size:12px;font-weight:400;color:var(--ink-3);margin-top:3px;line-height:1.5}
+.cell{font-size:13.5px;line-height:1.65;color:var(--ink-2)}
+.cell.time{font-size:13px;color:var(--ink-3)}
+.cell.sell{color:var(--ink)}
+.verdict{display:flex;flex-direction:column;gap:10px;align-items:flex-start}
+.tag{
+  font-size:12.5px;font-weight:700;letter-spacing:.08em;
+  padding:5px 12px;border-radius:3px;white-space:nowrap;
+}
+.tag.go{background:var(--green-bg);color:var(--green);border:1px solid #BFE0CE}
+.tag.watch{background:var(--amber-bg);color:var(--amber);border:1px solid #EAD9A8}
+.tag.stop{background:var(--red-bg);color:var(--red);border:1px solid #EBC5C1}
+.view-btn{
+  display:inline-flex;align-items:center;gap:6px;
+  font-size:13.5px;font-weight:700;letter-spacing:.05em;text-decoration:none;
+  color:#7A5E1E;background:linear-gradient(180deg,#F7ECD2,#EED9A4);
+  border:1px solid var(--gold);border-radius:5px;
+  padding:9px 14px;min-height:40px;white-space:nowrap;
+  transition:filter .15s ease;
+}
+.view-btn:hover{filter:brightness(1.05)}
+.empty{
+  display:none;background:#fff;border:1px solid var(--line);border-top:none;
+  padding:44px 20px;text-align:center;color:var(--ink-3);font-size:14px;
+}
+footer{
+  border-top:1px solid var(--line);
+  padding:22px 24px 34px;text-align:center;
+  font-size:12.5px;color:var(--ink-3);letter-spacing:.14em;
+}
+footer .fbrand{font-family:"Noto Serif SC",serif;color:var(--navy);font-size:14px;letter-spacing:.3em;margin-bottom:6px}
+
+@media (max-width:900px){
+  .colhead{display:none}
+  .overview{grid-template-columns:repeat(3,1fr)}
+  .ov{padding:16px 8px 18px}
+  .ov .num{font-size:27px}
+  .row{
+    grid-template-columns:96px 1fr;
+    gap:6px 14px;padding:16px;
+  }
+  .thumb{width:96px;height:96px}
+  .row > div:first-child{grid-row:span 2}
+  .price{grid-column:2}
+  .cell.sales,.cell.time,.cell.sell{grid-column:1 / -1}
+  .cell::before{
+    content:attr(data-lab);display:block;font-size:11px;letter-spacing:.2em;
+    color:var(--ink-3);font-weight:700;margin-bottom:2px;
+  }
+  .price-cell::before{
+    content:"价格";display:block;font-size:11px;letter-spacing:.2em;
+    color:var(--ink-3);font-weight:700;margin-bottom:2px;
+    font-family:"Noto Sans SC",sans-serif;
+  }
+  .verdict{grid-column:1 / -1;flex-direction:row;align-items:center;flex-wrap:wrap;margin-top:6px}
+  main{padding:16px 12px 44px}
+  .toolbar-inner{padding:12px}
+  header{padding:34px 16px 0}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none !important}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="studio-line">凯 哥 社 媒 工 作 室</div>
+    <h1>每日全球<span class="gold">爆款</span></h1>
+    <div class="date-line">
+      <span class="d" id="dateLine"></span>
+      <span id="sourceLine"></span>
+    </div>
+    <div class="gold-rule"></div>
+    <div class="overview">
+      <div class="ov"><div class="num" id="ovTotal"></div><div class="lab">本期款数</div></div>
+      <div class="ov"><div class="num" id="ovPlatforms"></div><div class="lab">来源平台</div></div>
+      <div class="ov"><div class="num"><em id="ovGo"></em></div><div class="lab">值得跟进</div></div>
+      <div class="ov"><div class="num" id="ovWatch"></div><div class="lab">可以观望</div></div>
+      <div class="ov"><div class="num" id="ovStop"></div><div class="lab">先别碰</div></div>
+    </div>
+  </div>
+</header>
+
+<div class="toolbar">
+  <div class="toolbar-inner">
+    <div class="filters" id="filters" role="group" aria-label="按平台筛选">
+      <button class="fbtn active" data-f="all">全部<span class="cnt"></span></button>
+      <button class="fbtn" data-f="Facebook">Facebook<span class="cnt"></span></button>
+      <button class="fbtn" data-f="TikTok">TikTok<span class="cnt"></span></button>
+      <button class="fbtn" data-f="Instagram">Instagram<span class="cnt"></span></button>
+      <button class="fbtn" data-f="Reddit">Reddit<span class="cnt"></span></button>
+      <button class="fbtn" data-f="X">X<span class="cnt"></span></button>
+      <button class="fbtn" data-f="Amazon">Amazon<span class="cnt"></span></button>
+      <button class="fbtn" data-f="阿里国际站">阿里国际站<span class="cnt"></span></button>
+    </div>
+    <div class="toolbar-right">
+      <span class="showing">当前显示 <b id="showCount"></b> 款</span>
+      <a class="dl-btn" id="dlBtn" href="#" download="">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#E3C87F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        下载 Word
+      </a>
+    </div>
+  </div>
+</div>
+
+<main>
+  <div class="colhead" aria-hidden="true">
+    <div>照片</div><div>产品</div><div>价格</div><div>销售数据</div><div>时间</div><div>卖点</div><div>爆款判断</div>
+  </div>
+  <div id="rows"></div>
+  <div class="empty" id="empty">该平台本期暂无款目。</div>
+</main>
+
+<footer>
+  <div class="fbrand">凯哥社媒工作室</div>
+  <div>每日全球爆款 · 数据采集日期 <span id="footerDate"></span> · 页面未显示的数据如实标注，不估算、不补数</div>
+  <div style="margin-top:16px">
+    <img src="assets/wechat-qr.jpg" alt="凯歌社媒工作室微信二维码" width="108" height="110" style="border:1px solid var(--line);border-radius:6px;background:#fff">
+    <div style="margin-top:6px;font-size:12px;letter-spacing:.06em;color:var(--ink-3)">微信扫码联系 · 凯歌社媒工作室</div>
+  </div>
+</footer>
+
+<script src="assets/products-data.js"></script>
+<script>
+var DATA = window.SIGNAL_DATA;
+var PRODUCTS = DATA.products;
+var DATE_STR = DATA.date || "";
+var dateParts = DATE_STR.split("-");
+var fmtDate = DATE_STR;
+if (dateParts.length === 3) {
+  fmtDate = parseInt(dateParts[0], 10) + " 年 " + parseInt(dateParts[1], 10) + " 月 " + parseInt(dateParts[2], 10) + " 日";
+}
+document.title = "凯哥社媒工作室每日全球爆款 · " + DATE_STR;
+var dateLineEl = document.getElementById("dateLine");
+if (dateLineEl) dateLineEl.textContent = fmtDate + (DATA.edition ? " · " + DATA.edition : "");
+var platSet = {};
+var platCounts = {};
+var goCount = 0, watchCount = 0, stopCount = 0;
+PRODUCTS.forEach(function(p){
+  platSet[p.platform] = true;
+  platCounts[p.platform] = (platCounts[p.platform] || 0) + 1;
+  if (p.verdictClass === "go") goCount++;
+  else if (p.verdictClass === "watch") watchCount++;
+  else if (p.verdictClass === "stop") stopCount++;
+});
+var platformTotal = Object.keys(platSet).length;
+var sourceLineEl = document.getElementById("sourceLine");
+if (sourceLineEl) sourceLineEl.textContent = platformTotal + " 个来源平台同步采集 · 每款均附原品链接";
+var ovTotalEl = document.getElementById("ovTotal");
+if (ovTotalEl) ovTotalEl.textContent = PRODUCTS.length;
+var ovPlatformsEl = document.getElementById("ovPlatforms");
+if (ovPlatformsEl) ovPlatformsEl.textContent = platformTotal;
+var ovGoEl = document.getElementById("ovGo");
+if (ovGoEl) ovGoEl.textContent = goCount;
+var ovWatchEl = document.getElementById("ovWatch");
+if (ovWatchEl) ovWatchEl.textContent = watchCount;
+var ovStopEl = document.getElementById("ovStop");
+if (ovStopEl) ovStopEl.textContent = stopCount;
+document.querySelectorAll(".fbtn").forEach(function(b){
+  var cntEl = b.querySelector(".cnt");
+  if (!cntEl) return;
+  var f = b.getAttribute("data-f");
+  cntEl.textContent = (f === "all") ? PRODUCTS.length : (platCounts[f] || 0);
+});
+var dlBtnEl = document.getElementById("dlBtn");
+if (dlBtnEl) {
+  dlBtnEl.setAttribute("href", "assets/report-" + DATE_STR + ".docx");
+  dlBtnEl.setAttribute("download", "凯哥社媒工作室每日全球爆款-" + DATE_STR + ".docx");
+}
+var footerDateEl = document.getElementById("footerDate");
+if (footerDateEl) footerDateEl.textContent = DATE_STR;
+var showCountInitEl = document.getElementById("showCount");
+if (showCountInitEl) showCountInitEl.textContent = PRODUCTS.length;
+
+function esc(s){return s.replace(/&/g,"&amp;").replace(/</g,"&lt;");}
+var rowsEl = document.getElementById("rows");
+var html = "";
+PRODUCTS.forEach(function(p){
+  html += '<article class="row" data-plat="'+esc(p.platform)+'">'
+    + '<div><img class="thumb" src="'+p.photo+'" alt="'+esc(p.name)+' 产品图" loading="lazy"></div>'
+    + '<div><span class="pno">NO.'+(p.id<10?"0":"")+p.id+'</span><div class="pname">'+esc(p.name)+'</div><br><span class="plat">'+esc(p.platform)+'</span></div>'
+    + '<div class="price price-cell">'+esc(p.price)+(p.priceNote?'<span class="note">'+esc(p.priceNote)+'</span>':'')+'</div>'
+    + '<div class="cell sales" data-lab="销售数据">'+esc(p.salesData)+'</div>'
+    + '<div class="cell time" data-lab="时间">'+esc(p.time)+'</div>'
+    + '<div class="cell sell" data-lab="卖点">'+esc(p.sellingPoint)+'</div>'
+    + '<div class="verdict"><span class="tag '+p.verdictClass+'">'+esc(p.verdict)+'</span>'
+    + '<a class="view-btn" href="'+p.sourceUrl+'" target="_blank" rel="noopener noreferrer">查看原品 &#8599;</a></div>'
+    + '</article>';
+});
+rowsEl.innerHTML = html;
+
+var btns = document.querySelectorAll(".fbtn");
+var showCount = document.getElementById("showCount");
+var emptyEl = document.getElementById("empty");
+btns.forEach(function(b){
+  b.addEventListener("click", function(){
+    btns.forEach(function(x){x.classList.remove("active");});
+    b.classList.add("active");
+    var f = b.getAttribute("data-f");
+    var count = 0;
+    document.querySelectorAll(".row").forEach(function(r){
+      var show = (f === "all" || r.getAttribute("data-plat") === f);
+      r.classList.toggle("hidden", !show);
+      if (show) count++;
+    });
+    showCount.textContent = count;
+    emptyEl.style.display = count === 0 ? "block" : "none";
+  });
+});
+</script>
+</body>
+</html>
