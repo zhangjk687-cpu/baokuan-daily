@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="description" content="凯哥社媒工作室，全球每日爆款 — 7个源每天精选15款，点开即看今日爆款。" />
+    <meta property="og:title" content="凯哥社媒工作室，全球每日爆款" />
+    <meta property="og:description" content="今日爆款 · 每天精选，点开即看" />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="data:," />
+<title>爆款信号器分享卡</title>
+    <style>
+      :root{
+        --navy:#081F5C;
+        --navy-deep:#04122E;
+        --gold:#C9A86A;
+        --gold-light:#E9D29A;
+        --gold-faint:rgba(201,168,106,.55);
+        --gold-hair:rgba(201,168,106,.32);
+        --ink-on-gold:#081F5C;
+        --text:#FFFFFF;
+        --text-soft:rgba(255,255,255,.75);
+        --text-faint:rgba(255,255,255,.45);
+        --serif:"Songti SC","STSong","Noto Serif SC","SimSun",serif;
+        --sans:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",system-ui,-apple-system,sans-serif;
+      }
+      *{ box-sizing:border-box; }
+      html,body{ height:100%; }
+      body{
+        margin:0;
+        background:radial-gradient(130% 70% at 50% -10%, #102B6E 0%, var(--navy) 55%, var(--navy-deep) 100%);
+        color:var(--text);
+        font-family:var(--sans);
+        -webkit-font-smoothing:antialiased;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        padding:24px 18px;
+        min-height:100dvh;
+      }
+      .card{
+        width:100%;
+        max-width:420px;
+        margin:auto;
+        text-align:center;
+        position:relative;
+        padding:58px 34px 46px;
+        border:1px solid var(--gold-faint);
+        background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,0) 45%);
+        box-shadow:0 30px 70px rgba(0,0,0,.5);
+      }
+      .card::before{
+        content:"";
+        position:absolute; inset:8px;
+        border:1px solid var(--gold-hair);
+        pointer-events:none;
+      }
+      .emblem{
+        width:78px; height:78px;
+        margin:0 auto;
+        border-radius:50%;
+        border:1px solid var(--gold);
+        display:flex; align-items:center; justify-content:center;
+        position:relative;
+      }
+      .emblem::after{
+        content:"";
+        position:absolute; inset:4px;
+        border-radius:50%;
+        border:1px solid var(--gold-hair);
+      }
+      .emblem span{
+        font-family:Georgia,"Times New Roman",var(--serif);
+        font-size:38px; line-height:1; font-weight:700;
+        color:var(--gold-light);
+        transform:translateY(-1px);
+      }
+      h1{
+        margin:40px 0 0;
+        font-family:var(--serif);
+        font-size:35px;
+        line-height:1.55;
+        font-weight:600;
+        letter-spacing:.05em;
+      }
+      h1 .l1{ white-space:nowrap; }
+      h1 .l2{ display:block; }
+      .rule{
+        display:flex; align-items:center; justify-content:center; gap:10px;
+        margin:30px auto 0;
+      }
+      .rule::before,.rule::after{
+        content:"";
+        width:52px; height:1px;
+        background:var(--gold-faint);
+      }
+      .rule i{
+        width:6px; height:6px;
+        background:var(--gold);
+        transform:rotate(45deg);
+        display:block;
+      }
+      .today{
+        margin:26px 0 0;
+        font-size:16.5px;
+        font-weight:600;
+        color:var(--gold-light);
+        letter-spacing:.14em;
+      }
+      .today .date{
+        font-family:Georgia,"Times New Roman",serif;
+        letter-spacing:.04em;
+      }
+      .intro{
+        margin:20px auto 0;
+        max-width:19em;
+        font-size:15px;
+        line-height:1.9;
+        color:var(--text-soft);
+        letter-spacing:.03em;
+      }
+      .sources{
+        margin:26px 0 0;
+        font-size:12.5px;
+        letter-spacing:.18em;
+        color:rgba(233,210,154,.75);
+        line-height:1.8;
+      }
+      .cta{
+        display:flex; align-items:center; justify-content:center; gap:10px;
+        margin-top:44px;
+        width:100%;
+        min-height:62px;
+        padding:16px 20px;
+        background:linear-gradient(180deg, var(--gold-light) 0%, var(--gold) 60%, #B8945A 100%);
+        color:var(--ink-on-gold);
+        font-size:19.5px;
+        font-weight:700;
+        letter-spacing:.22em;
+        text-indent:.22em;
+        text-decoration:none;
+        box-shadow:0 14px 30px rgba(0,0,0,.4), inset 0 1px 0 rgba(255,255,255,.5);
+        transition:transform .15s ease;
+      }
+      .cta:active{ transform:scale(.985); }
+      .cta .arrow{ font-size:19px; letter-spacing:0; text-indent:0; }
+      .cta-hint{
+        margin:16px 0 0;
+        font-size:12.5px;
+        letter-spacing:.12em;
+        color:var(--text-faint);
+      }
+      .qr-block{ margin-top:40px; }
+      .qr-rule{
+        display:flex; align-items:center; justify-content:center; gap:10px;
+        margin:0 auto 28px;
+      }
+      .qr-rule::before,.qr-rule::after{
+        content:"";
+        width:52px; height:1px;
+        background:var(--gold-hair);
+      }
+      .qr-rule i{
+        width:5px; height:5px;
+        background:var(--gold-faint);
+        transform:rotate(45deg);
+        display:block;
+      }
+      .qr-frame{
+        width:216px; height:216px;
+        margin:0 auto;
+        background:#fff;
+        padding:11px;
+        border:1px solid var(--gold);
+        box-shadow:0 16px 36px rgba(0,0,0,.4);
+      }
+      .qr-frame img{
+        display:block;
+        width:100%; height:100%;
+        object-fit:cover;
+      }
+      .qr-caption{
+        margin:18px 0 0;
+        font-size:15.5px;
+        font-weight:600;
+        letter-spacing:.1em;
+        color:var(--text);
+      }
+      .qr-caption b{ color:var(--gold-light); font-weight:700; }
+      @media (max-width:400px){
+        .card{ padding:46px 24px 38px; }
+        h1{ font-size:29.5px; margin-top:32px; }
+        .cta{ font-size:18px; margin-top:36px; }
+        .qr-block{ margin-top:32px; }
+      }
+      @media (max-width:340px){
+        h1{ font-size:26.5px; }
+      }
+      @media (prefers-reduced-motion: reduce){
+        .cta{ transition:none; }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <div class="emblem" aria-hidden="true"><span>$</span></div>
+
+      <h1><span class="l1">凯哥社媒工作室，</span><span class="l2">全球每日爆款</span></h1>
+
+      <div class="rule" aria-hidden="true"><i></i></div>
+
+      <p class="today">正在加载今日爆款…</p>
+
+      <p class="intro">每日精选全球正在卖爆的产品，<br />有图、有价格、有卖点。</p>
+
+      <p class="sources">FB · TK · INSTAGRAM · REDDIT · X · AMAZON · 阿里</p>
+
+      <a class="cta" href="/mobile/">
+        进入今日爆款<span class="arrow" aria-hidden="true">→</span>
+      </a>
+      <p class="cta-hint">点开即看 · 无需下载安装</p>
+
+      <div class="qr-block">
+        <div class="qr-rule" aria-hidden="true"><i></i></div>
+        <div class="qr-frame">
+          <img src="assets/wechat-qr.jpg" alt="凯歌社媒工作室微信二维码，扫码添加微信联系" width="639" height="650" />
+        </div>
+        <p class="qr-caption">微信扫码联系 · <b>凯歌社媒工作室</b></p>
+      </div>
+    </main>
+  
+<script>
+(function(){
+  var s=document.createElement("script");
+  s.src="/mobile/assets/data.js";
+  s.onload=function(){
+    try{
+      if(typeof DATA_DATE==="undefined"||typeof PRODUCTS==="undefined")return;
+      var n=new Set(PRODUCTS.map(function(p){return p.platform;})).size;
+      var t=document.querySelector(".today");
+      if(t)t.innerHTML='<span class="date">'+DATA_DATE+'</span> \u00b7 \u4eca\u65e5 '+PRODUCTS.length+' \u6b3e \u00b7 '+n+' \u4e2a\u6e90';
+      var m=document.querySelector('meta[property="og:description"]');
+      if(m)m.setAttribute("content",DATA_DATE+" \u4eca\u65e5"+PRODUCTS.length+"\u6b3e \u00b7 "+n+"\u4e2a\u6e90\u6bcf\u5929\u7cbe\u9009\uff0c\u70b9\u5f00\u5373\u770b");
+    }catch(e){}
+  };
+  document.body.appendChild(s);
+})();
+</script>
+
+</body>
+</html>
