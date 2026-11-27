@@ -83,6 +83,13 @@ window.SIGNAL_DATA = {
  time:"采集日期 2026-11-27",
  sellingPoint:"1.5L 大碗手压切碎机，不锈钢刀片，可切蔬菜、肉类、水果和香草，手动按压即可切碎大蒜洋葱。",
  verdict:"可以观望", verdictClass:"watch",
- sourceUrl:"https://www.alibaba.com/product-detail/Large-1-5L-Bowl-Effortless-Vegetable_1601381334594.html"}
+ sourceUrl:"https://www.alibaba.com/product-detail/Large-1-5L-Bowl-Effortless-Vegetable_1601381334594.html"},
+{id:11, photo:"assets/image11.jpg", name:"Beats Solo 4 On-Ear Headphones, 50 Hours Battery Life - Metallic Pink | Rich, Bass-Forward Sound Quality, Spatial Audio, USB-C Fast Fuel Charging, Compatible with Apple & Android Devices", platform:"Amazon",
+ price:"$79.99", priceNote:"apiguru Best Sellers 接口，USD",
+ salesData:"Best Sellers 第 4 名，评分 4.6/5，30,681 条评价",
+ time:"采集日期 2026-11-27",
+ sellingPoint:"头戴式耳机，50 小时续航，空间音频，USB-C 快充，兼容苹果和安卓设备，金属粉色。",
+ verdict:"可以观望", verdictClass:"watch",
+ sourceUrl:"https://www.amazon.com/Beats-Solo-Ear-Headphones-Ultra-Lightweight/dp/B0FHLPS8ZF/ref=zg_bs_g_electronics_d_sccl_4/141-3151391-8330728?psc=1"}
   ]
 };
