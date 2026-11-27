@@ -77,18 +77,11 @@ var PRODUCTS = [
     point:"主动降噪真无线耳机，支持实时翻译、心率监测与助听功能，空间音频，USB-C 充电。",
     verdict:"可以观望", vcls:"watch",
     url:"https://www.amazon.com/Apple-Cancellation-Translation-Headphones-High-Fidelity/dp/B0FQFB8FMG/ref=zg_bs_g_electronics_d_sccl_1/131-8178280-3618421?psc=1", img:"assets/image7.jpg" },
-  { n:8, platform:"Amazon", name:"Apple AirTag (2nd Generation): Tracker for Keychain, Wallet, and More; Locator with Sound; Simple One-Tap Setup with iPhone or iPad; Key Finder with up to 1.5X Precision Finding Range",
-    price:"$18.00", priceNote:"apiguru Best Sellers 接口，USD",
-    sales:"Best Sellers 第 3 名，评分 4.6/5，13,616 条评价",
-    time:"采集日期 2026-11-27",
-    point:"第二代 AirTag，精确定位范围提升至 1.5 倍，带声音查找，iPhone 一触配对。",
-    verdict:"可以观望", vcls:"watch",
-    url:"https://www.amazon.com/Apple-AirTag-2nd-Generation-Precision/dp/B0GJTFXNRX/ref=zg_bs_g_electronics_d_sccl_3/131-8178280-3618421?psc=1", img:"assets/image8.jpg" },
-  { n:9, platform:"阿里国际站", name:"迷你投影仪 HY300 Topleo Mini Projector HY300",
+  { n:8, platform:"阿里国际站", name:"迷你投影仪 HY300 Topleo Mini Projector HY300",
     price:"$33.91/件（1–99 件，原价 $39.90，85 折；100–999 件 $31.99；≥1000 件 $30.99），起订量 1 件", priceNote:"",
     sales:"已售 843 件，产品评分 5.0（12 评价），供应商店铺评分 4.3/5（4349 条），准时发货率 99.5%，响应时间 ≤2 小时，线上营收 $1M–$2M；供应商 Shenzhen Topleo Technology Limited，11 年",
     time:"数据时间段 2026-11-28；采集日期 2026-11-28",
     point:"安卓 14、720P、350 ANSI 流明，短焦 0.8:1，可投 100 英寸大屏，3 年保修。",
     verdict:"值得跟进", vcls:"follow",
-    url:"https://www.alibaba.com/product-detail/Topleo-Mini-Projector-Hy300-Pro-Projecteur_1601072905240.html", img:"assets/image9.jpg" }
+    url:"https://www.alibaba.com/product-detail/Topleo-Mini-Projector-Hy300-Pro-Projecteur_1601072905240.html", img:"assets/image8.jpg" }
 ];
