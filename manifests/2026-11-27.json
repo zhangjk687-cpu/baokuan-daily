@@ -1,0 +1,110 @@
+{
+  "version": "2026-11-27",
+  "data_date": "2026-11-27",
+  "count": 11,
+  "target": 15,
+  "gaps": {
+    "TikTok": 2,
+    "X": 2
+  },
+  "items": [
+    {
+      "id": 1,
+      "name": "Kitty Kurlz 猫咪互动玩具 Kitty Kurlz™",
+      "platform": "Facebook",
+      "price": "$29.99（原价 $59.99，落地页实测，USD）",
+      "source_url": "https://marlenespetshop.com/products/kitty-kurlz-the-interactive-mental-physical-exercise-for-cats",
+      "verdict": "可以观望"
+    },
+    {
+      "id": 2,
+      "name": "GreenPan Spin & Go 便携榨汁机（奶油白）GreenPan Spin & Go Portable Blender | Cream",
+      "platform": "Facebook",
+      "price": "$99.99（建议零售价 $149.99，落地页实测，USD）",
+      "source_url": "https://www.greenpan.us/products/spin-go-portable-blender-cream",
+      "verdict": "可以观望"
+    },
+    {
+      "id": 3,
+      "name": "Theo Grace 心形垂坠名字项链（925 纯银款）Heart Drop Vertical Name Pendant Necklace in Sterling Silver",
+      "platform": "Facebook",
+      "price": "$63（原价 $70，立省 10%，落地页实测，USD）",
+      "source_url": "https://www.theograce.com/products/heart-drop-vertical-name-necklace-in-sterling-silver",
+      "verdict": "可以观望"
+    },
+    {
+      "id": 4,
+      "name": "DIGWAC 106\" L-shaped modular sectional sofa with a 49\"",
+      "platform": "TikTok",
+      "price": "$349.00（TokConnect 榜单价，TikTok Shop，USD）",
+      "source_url": "https://tokconnect.com/trends/tiktok-shop/rising-products/",
+      "verdict": "值得跟进"
+    },
+    {
+      "id": 5,
+      "name": "窄玄关鞋柜 Narrow Hallway Shoe Cabinet",
+      "platform": "Instagram",
+      "price": "$249.99（原价 $329.99，-24%，店铺商品页实测，USD；White / 3 Flip Drawers 款）",
+      "source_url": "https://homeyhues.shop/products/narrow-hallway-shoe-cabinet",
+      "verdict": "可以观望"
+    },
+    {
+      "id": 6,
+      "name": "SitKick 可穿戴场边座椅 SitKick Wearable Sideline Seat",
+      "platform": "Instagram",
+      "price": "$84.99（原价 $169.98，黑五价 5 折，店铺商品页实测，USD；2 件 $149.99、3 件 $209.99）",
+      "source_url": "https://sitkick.store/products/sitkick-wearable-sideline-seat",
+      "verdict": "可以观望"
+    },
+    {
+      "id": 7,
+      "name": "福禄克 77 IV 数字万用表 Fluke 77 IV Digital Multimeter",
+      "platform": "Reddit",
+      "price": "$479.99（福禄克官网实测，现货，USD；帖子标题里的 $225 是发帖人自述入手价，未采用）",
+      "source_url": "https://www.fluke.com/en-us/product/electrical-testing/digital-multimeters/fluke-77-iv",
+      "verdict": "可以观望"
+    },
+    {
+      "id": 8,
+      "name": "Apple TV 4K 第 4 代 Apple TV 4K (4th gen)",
+      "platform": "Reddit",
+      "price": "$299.00（苹果官网购买页实测，USD；可分 6 期，每期 $49.83）",
+      "source_url": "https://www.apple.com/shop/buy-tv/apple-tv-4k",
+      "verdict": "可以观望"
+    },
+    {
+      "id": 9,
+      "name": "Apple AirTag (2nd Generation): Tracker for Keychain, Wallet, and More; Locator with Sound; Simple One-Tap Setup with iPhone or iPad; Key Finder with up to 1.5X Precision Finding Range",
+      "platform": "Amazon",
+      "price": "$18.00（apiguru Best Sellers 接口，USD）",
+      "source_url": "https://www.amazon.com/Apple-AirTag-2nd-Generation-Precision/dp/B0GJTFXNRX/ref=zg_bs_g_electronics_d_sccl_3/143-2757842-0560622?psc=1",
+      "verdict": "可以观望"
+    },
+    {
+      "id": 10,
+      "name": "LOVFE 大型 1.5L 碗手压切碎机 Large 1.5L Bowl Effortless Vegetable Chopper Meat Grinder Fruit and Herb Chopper",
+      "platform": "阿里国际站",
+      "price": "$1.28（1 set 起订；灰/绿/粉 1.5L 均为 $1.28，商品页未显示阶梯价）",
+      "source_url": "https://www.alibaba.com/product-detail/Large-1-5L-Bowl-Effortless-Vegetable_1601381334594.html",
+      "verdict": "可以观望"
+    },
+    {
+      "id": 11,
+      "name": "Beats Solo 4 On-Ear Headphones, 50 Hours Battery Life - Metallic Pink | Rich, Bass-Forward Sound Quality, Spatial Audio, USB-C Fast Fuel Charging, Compatible with Apple & Android Devices",
+      "platform": "Amazon",
+      "price": "$79.99（apiguru Best Sellers 接口，USD）",
+      "source_url": "https://www.amazon.com/Beats-Solo-Ear-Headphones-Ultra-Lightweight/dp/B0FHLPS8ZF/ref=zg_bs_g_electronics_d_sccl_4/141-3151391-8330728?psc=1",
+      "verdict": "可以观望"
+    }
+  ],
+  "word": {
+    "path": "mobile/assets/baokuan-2026-11-27.docx",
+    "md5": "64c48dd9532eb38fc3c9d834ccbe42f5",
+    "bytes": 2255465
+  },
+  "publish": {
+    "method": "github-api",
+    "repo": "zhangjk687-cpu/baokuan-daily",
+    "branch": "main"
+  }
+}
